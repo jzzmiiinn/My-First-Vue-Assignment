@@ -5,5 +5,5 @@ const name = ref('')
 
 <template>
   <input v-model="name" placeholder="Type your name" />
-  <p>Hello {{ name }}</p>
+  <p>Hello, {{ name }}</p>
 </template>
