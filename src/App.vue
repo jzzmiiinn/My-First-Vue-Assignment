@@ -1,8 +1,9 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import { ref } from 'vue'
+const name = ref('')
 </script>
 
 <template>
-  <h1>Hello SPEC Developers </h1>
+  <input v-model="name" placeholder="Type your name" />
+  <p>Hello {{ name }}</p>
 </template>
